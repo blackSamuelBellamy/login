@@ -53,7 +53,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     text-shadow: .5px .5px .5px #333;
-    z-index: 10;
+    z-index: 30;
     cursor: pointer;
     text-transform: capitalize;
 }

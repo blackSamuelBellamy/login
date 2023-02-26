@@ -1,4 +1,5 @@
 import { useContext, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import Spline from '@splinetool/react-spline'
 import { FaKey, FaUser, FaLock, FaQuestionCircle } from 'react-icons/fa'
@@ -13,6 +14,9 @@ const Form = () => {
     const { setCorreo, correo, setClave, clave } = useContext(DataContext)
 
     const form = useRef(null)
+    const navigate = useNavigate()
+
+    const handleClick = () => navigate('/home')
 
     const emailValidation = correo => {
         const mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/
@@ -71,7 +75,8 @@ const Form = () => {
     }
     return (
         <div className="formContainer">
-            <div className="homeButton">inicio</div>
+            <div className="homeButton"
+            onClick={handleClick}>inicio</div>
             <div className="paint">
                 <img src={mainLogo} alt="logo company" />
             </div>
