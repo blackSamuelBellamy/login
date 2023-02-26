@@ -42,10 +42,10 @@
 .subtitle {
     position: absolute;
     left: 40%;
-    top: 20%;
+    top: 15%;
     transform: translateX(-50%);
     z-index: 10;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 600;
 
 }
@@ -53,15 +53,6 @@
 
 @media (max-width: 850px) {
     
-    .subtitle {
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        font-size: 6vw;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
     .spline {
         top: 50%;
         left: -20%;
@@ -77,11 +68,16 @@
     }
 }
 
-@media (min-width: 451px) and (max-width: 850px) {
+@media (min-width: 450px) and (max-width: 850px) {
 
     .subtitle {
-        font-size: 5vw;
-        top: 30%;
+        font-size: 1.8em;
+        top: 20%;
+        position: absolute;
+        width: 80%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .spline {
@@ -97,3 +93,8 @@
     }
 }
 
+@media (max-width: 450px) {
+    .subtitle {
+        left: 50%;
+    }
+}

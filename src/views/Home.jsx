@@ -1,24 +1,29 @@
+import { useContext } from 'react'
 import Spline from '@splinetool/react-spline'
 import Typewriter from 'typewriter-effect'
+import { DataContext } from '../hooks/DataContext'
 import '../components/styles/home.css'
 import Nav from '../components/Nav'
 import Carrusel from '../components/Carrusel'
 import Footer from '../components/Footer'
 
 export default function Home() {
+
+  const { hamburgerDisplay } = useContext(DataContext)
   return (
     <div className="homeContainer">
       <Nav />
-      <div className="subtitle">
-        <Typewriter
-          options={{
-            strings: ['Coders destacados!', 
-            'Podrás encontar desarrolladores Front-end, Back-end y Full-stack...',
-            'Ve al navbar para comenzar a buscar a nuestros profesionales!'],
-            autoStart: true,
-            loop: true,
-          }} />
-      </div>
+      {hamburgerDisplay === false &&
+        <div className="subtitle">
+          <Typewriter
+            options={{
+              strings: ['Coders destacados!',
+                'Podrás encontar desarrolladores Front-end, Back-end y Full-stack...',
+                'Ve al navbar para comenzar a buscar a nuestros profesionales!'],
+              autoStart: true,
+              loop: true,
+            }} />
+        </div>}
       <div className="main">
         <div className="spline">
           <Spline scene="https://prod.spline.design/cWEXYurkBF7s1djN/scene.splinecode" className='splineBalls' />
