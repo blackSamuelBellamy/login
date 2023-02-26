@@ -1,4 +1,4 @@
-import Form from './components/Form'
+import Form from './views/Form'
 import Home from './views/Home'
 import './components/styles/App.css'
 import { States } from './hooks/DataContext'

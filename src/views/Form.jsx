@@ -6,8 +6,7 @@ import { FaKey, FaUser, FaLock, FaQuestionCircle } from 'react-icons/fa'
 import { HiUserPlus } from 'react-icons/hi2'
 import { DataContext } from '../hooks/DataContext'
 import mainLogo from '../assets/img/mainLogo.png'
-import './styles/form.css'
-
+import '../components/styles/form.css'
 
 const Form = () => {
 
