@@ -24,12 +24,10 @@ const Nav = () => {
         <ul>
           <NavLink to='/login' className={hamburgerDisplay ? 'liDisplayed' : 'li'} >Ingresar</NavLink>
           <NavLink to='/*' className={hamburgerDisplay ? 'liDisplayed' : 'li'} >Crear Perfil</NavLink>
-          <NavLink to='/*' className={hamburgerDisplay ? 'liDisplayed' : 'li'} >Buscar Coders</NavLink>
+          <NavLink to='/busqueda' className={hamburgerDisplay ? 'liDisplayed' : 'li'} >Buscar Coders</NavLink>
         </ul>
       </nav>
-      <div className="busqueda">
-        <div className="busqueda"></div>
-      </div>
+      <div></div>
     </header>
   )
 }

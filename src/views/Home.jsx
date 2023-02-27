@@ -30,7 +30,9 @@ export default function Home() {
         </div>
         <Carrusel />
       </div>
-      <Footer />
+      <div className="homeFooter">
+        <Footer />
+      </div>
     </div>
   )
 }
