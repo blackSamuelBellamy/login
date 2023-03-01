@@ -11,9 +11,13 @@
   "dependencies": {
     "@splinetool/react-spline": "^2.2.5",
     "axios": "^1.3.4",
+    "bootstrap": "^5.2.3",
+    "faker-js": "^1.0.0",
     "jquery": "^3.6.3",
     "jquery.ripples": "^0.6.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-bootstrap-range-slider": "^3.0.8",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1",

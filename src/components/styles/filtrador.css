@@ -84,6 +84,12 @@
     font-size: 1.2em;
 }
 
+
+.filterCoderArea {
+    position: relative;
+    z-index: 100;
+}
+
 .busquedaResponsive {
     position: absolute;
     top: -100%;
@@ -185,6 +191,16 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     display: none;
     overflow-y: scroll;
+    z-index: 50;
+}
+
+.codersName {
+    overflow: hidden;
+}
+
+.textoArea {
+    position: relative;
+    z-index: 100;
 }
 
 .hiddenBox p {

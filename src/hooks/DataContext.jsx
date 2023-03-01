@@ -11,12 +11,15 @@ export const States = ({ children }) => {
     const [hamburgerDisplay, setHamburgerDisplay] = useState(false)
     const [filtradorDisplay, setFiltradorDisplay] = useState(false)
     const [coders, setCoders] = useState(Coders)
+    const [freeCoders, setFreeCoders] = useState(Coders)
+    const [isSaving, setIsSaving] = useState(false)
 
     const allDatas = {
         correo, setCorreo, clave, setClave,
         hamburgerDisplay, setHamburgerDisplay,
         filtradorDisplay, setFiltradorDisplay,
-        coders, setCoders
+        coders, setCoders,freeCoders, setFreeCoders,
+        isSaving, setIsSaving
     }
 
     return (

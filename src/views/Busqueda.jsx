@@ -5,22 +5,22 @@ import Filtrador from '../components/Filtrador'
 import '../components/styles/busqueda.css'
 
 const Busqueda = () => {
-    const { coders } = useContext(DataContext)
+    const { freeCoders } = useContext(DataContext)
 
     return (
         <>
             <Filtrador />
             <div className="codersWrap">
                 <div className="coderContainer">
-                    {coders.map((coder, index) => 
+                    {freeCoders.map((coders, index) => 
                         <div className="coderBoxCards" key={index}>
                             <div className="single-box">
                                 <div className="coderBox-content">
-                                    <img className="sides side-1" src={coder.url} alt={coder.id} />
+                                    <img className="sides side-1" src={coders.url} alt={coders.id} />
                                     <div className="sides side-2">
                                         <div className="contentCoders">
-                                            <h2>{coder.nombre}</h2>
-                                            <p>{coder.descripcion}</p>
+                                            <h2>{coders.nombre}</h2>
+                                            <p>{coders.descripcion}</p>
                                             <div className='socials'>
                                                 <AiFillGithub className='icons' />
                                                 <AiFillLinkedin className='icons' />

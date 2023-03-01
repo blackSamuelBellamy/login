@@ -82,29 +82,31 @@ const Form = () => {
                 <Spline scene="https://prod.spline.design/xVT-vQQeBRSEvUWW/scene.splinecode" />
             </div>
             <div className="contenedorFormulario">
-                <div className="box">
+                <div className="boxForm">
                     <div className="cover"></div>
                     <div className="shadow"></div>
-                    <div className="content">
-                        <form className='form' onSubmit={handleSubmit} ref={form} >
+                    <div className="contentForm">
+                        <form className='formMain' onSubmit={handleSubmit} ref={form} >
                             <h3 className='logo'>
                                 <FaKey />
                             </h3>
                             <h2>Iniciar sesión</h2>
-                            <div className="inputBox">
+                            <div className="inputBoxForm">
                                 <input type="text"
                                     name="email"
                                     value={correo}
-                                    onChange={noSpaceEmail} />
-                                <FaUser className='icon' />
+                                    onChange={noSpaceEmail}
+                                    className='textForm' />
+                                <FaUser className='iconForm' />
                                 <span>Email</span>
                             </div>
-                            <div className="inputBox">
+                            <div className="inputBoxForm">
                                 <input type="password"
                                     name="password"
                                     value={clave}
-                                    onChange={noSpacePassword} />
-                                <FaLock className='icon' />
+                                    onChange={noSpacePassword}
+                                    className='textForm' />
+                                <FaLock className='iconForm' />
                                 <span>Password</span>
                             </div>
                             <div className="links">
@@ -117,7 +119,7 @@ const Form = () => {
                                     Registrarse
                                 </p>
                             </div>
-                            <div className="inputBox">
+                            <div className="inputBoxForm">
                                 <button type="submit" className='submit'>
                                     Login
                                 </button>
