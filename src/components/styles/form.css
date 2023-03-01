@@ -281,7 +281,8 @@ input[type='text'], input[type='password'] {
 @media (max-width: 750px) {
 
     .paint {
-        top: 2%;
+        top: 10%;
+        transform: scale(.6);
     }
 
     .homeButton {
@@ -299,7 +300,8 @@ input[type='text'], input[type='password'] {
 @media (max-width: 450px) {
 
     .paint {
-        top: 4%;
+        top: 6%;
+        transform: scale(.7);
     }
 
     .homeButton {
@@ -349,7 +351,6 @@ input[type='text'], input[type='password'] {
     }
 
     .paint {
-        transform: scale(.7);
         top: 3%;
     }
 
@@ -383,5 +384,16 @@ input[type='text'], input[type='password'] {
 
     .form .submit {
         font-size: 1em;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 850px) {
+    .paint {
+        transform: scale(.6);
+        top: 0%;
+    }
+
+    .homeButton {
+        top: 3%;
     }
 }

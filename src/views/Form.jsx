@@ -74,10 +74,9 @@ const Form = () => {
     }
     return (
         <div className="formContainer">
-            <div className="homeButton"
-            onClick={handleClick}>inicio</div>
+            <div className="homeButton" onClick={handleClick}>inicio</div>
             <div className="paint">
-                <img src={mainLogo} alt="logo company" />
+                <img src={mainLogo} className='imgLogo' alt="logo company" />
             </div>
             <div className="splineContainer">
                 <Spline scene="https://prod.spline.design/xVT-vQQeBRSEvUWW/scene.splinecode" />
