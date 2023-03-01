@@ -31,10 +31,11 @@ const Filtrador = () => {
       </div>
       <div className={filtradorDisplay ? "menuBusqueda busquedaResponsive": "menuBusqueda"}>
         <div className="inputBoxSearch inputAreaName">
-          <input type="text" name='Area'
+          <input type="text" name='Area' className='boxSearchInput'
             onFocus={() => setArea(true)}
             onBlur={() => setArea(false)}
           />
+          <p className='filtroName areaFiltro'>Area</p>
           <div className={displaying(area) ? 'hiddenBox filterCoderArea hidden' : 'hiddenBox filterCoderArea'}>
             <p>Front-End</p>
             <p>Back-End</p>
@@ -42,10 +43,11 @@ const Filtrador = () => {
           </div>
         </div>
         <div className="inputBoxSearch inputCoderName">
-          <input type="text" name='Coder'
+          <input type="text" name='Coder' className='boxSearchInput'
             onFocus={() => setCoder(true)}
             onBlur={() => setCoder(false)}
           />
+          <p className='filtroName nombreFiltro'>Nombre</p>
           <div className={displaying(coder) ? 'hiddenBox filterCoderName hidden' : 'hiddenBox filterCoderName'}>
             <p>Gustavo Lopez</p>
             <p>Alejandro Quiñones</p>
@@ -54,10 +56,11 @@ const Filtrador = () => {
           </div>
         </div>
         <div className="inputBoxSearch inputLanguageName">
-          <input type="text" name='Language'
+          <input type="text" name='Language' className='boxSearchInput'
             onFocus={() => setLanguage(true)}
             onBlur={() => setLanguage(false)}
           />
+          <p className='filtroName lenguajeFiltro'>Lenguaje</p>
           <div className={displaying(language) ? 'hiddenBox filterCoderLanguage hidden' : 'hiddenBox filterCoderLanguage'}>
             <p>Java</p>
             <p>Python</p>

@@ -26,11 +26,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: auto;
     width: 100%;
     background: #C9D6F3;
     position: relative;
-    
+    top: 20%;
 }
 
 .coderContainer::before {
@@ -128,8 +129,9 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1360px) {
     .coderContainer {
-        top: 20%;
+        top: 30%;
     }
 }
+

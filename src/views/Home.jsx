@@ -1,4 +1,5 @@
-import { useContext } from 'react'
+
+import { useContext} from 'react'
 import Spline from '@splinetool/react-spline'
 import Typewriter from 'typewriter-effect'
 import { DataContext } from '../hooks/DataContext'
