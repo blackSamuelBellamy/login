@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Card, ListGroup, Form, Button } from "react-bootstrap";
 import { FaMoneyBillWave } from "react-icons/fa";
 import { DataContext } from "../hooks/DataContext";
+import Navegacion from "../components/Navegacion";
 
 export default function ContactarFreecoder() {
   const { coders } = useContext(DataContext);
@@ -91,6 +92,7 @@ export default function ContactarFreecoder() {
   return (
     <>
       <div className="maincontainer">
+        <Navegacion />
         <div className="row">
           <div className="col-xl-3 col-md-4 col-sm-12  secc-izq maincontainer">
           <h2>Nombre Programador: Mary Freecoder</h2>

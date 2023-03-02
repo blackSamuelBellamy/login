@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import AbonarPropuesta1 from '../components/AbonarPropuesta1';
 import AbonarPropuesta2 from '../components/AbonarPropuesta2';
+import NavBar from '../components/NavBar';
+import Navegacion from '../components/Navegacion';
 
 export default function AbonarPropuesta() {
   const [isSaving, setIsSaving] = useState(false);
@@ -16,6 +18,8 @@ export default function AbonarPropuesta() {
 
   return (
     <div className='maincontainer'>
+        <Navegacion />
+        <NavBar />
       <div className='maincontainer' >{<AbonarPropuesta1/>}</div>
       <div className='maincontainer'>{<AbonarPropuesta2/>}</div>
 

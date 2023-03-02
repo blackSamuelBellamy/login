@@ -7,6 +7,7 @@ import { Button } from 'react-bootstrap';
 //import CrearDatosPerfil from './viewscrearperfil/CrearDatosPerfil';
 import CrearPropInicio from '../components/CrearPropInicio';
 import ImportarDatosCliente from '../components/ImportarDatosCliente';
+import Navegacion from '../components/Navegacion';
 import RedactarPropuesta1 from '../components/RedactarPropuesta1';
 import RedactarPropuesta2 from '../components/RedactarPropuesta2';
 import RedactarPropuesta3 from '../components/RedactarPropuesta3';
@@ -26,6 +27,7 @@ export default function CrearPropuesta() {
 
   return (
     <div className='maincontainer' >
+      <Navegacion />
       <div>{<CrearPropInicio />}</div>
       <div>{<ImportarDatosCliente />}</div>
       <div>{<RedactarPropuesta1 />}</div>

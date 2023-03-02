@@ -8,6 +8,7 @@ import {
 } from 'react-bootstrap'
 
 import Loading from './Loading'
+import Navegacion from './Navegacion';
 import TrackingDeploy from './TrackingDeploy';
 
 
@@ -26,7 +27,7 @@ function TrackingRequest() {
     <>
 
       <div className='maincontainer'>
-
+        <Navegacion />
         <Container className='text-center'>
           <Form className='maincontainer'>
             <Row className="align-content-center">

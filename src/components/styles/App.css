@@ -164,6 +164,7 @@ form button[type="submit"]:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     /* font-family: 'Helvetica Neue', sans-serif;*/
     font-family: 'consolas';
+    position: relative;
 }
 
 .maincontainer {
@@ -177,6 +178,7 @@ form button[type="submit"]:hover {
     flex-direction: column;
     padding: 2px;
     margin: 2px;
+    position: relative;
 }
 
 .maincontainer input[type="text"],
@@ -189,6 +191,7 @@ form button[type="submit"]:hover {
     border: 1px solid #ccc;
     border-radius: 3px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    position: relative;
 }
 
 .maincontainer button[type="submit"] {
@@ -204,10 +207,12 @@ form button[type="submit"]:hover {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     font-family: 'consolas';
+    position: relative;
 }
 
 .maincontainer button[type="submit"]:hover {
     background-color: #0062cc;
+    position: relative;
 }
 
 #maincontainer-button2[type="submit"] {
@@ -223,11 +228,13 @@ form button[type="submit"]:hover {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     font-family: 'consolas';
+    position: relative;
 }
 
 ul.list-unstyled {
     padding-left: 0;
     list-style: none;
+    position: relative;
 }
 
 ul.list-unstyled li {
@@ -236,6 +243,7 @@ ul.list-unstyled li {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
+    position: relative;
 }
 
 

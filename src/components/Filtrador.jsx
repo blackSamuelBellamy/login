@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react'
 import { DataContext } from '../hooks/DataContext'
 import { NavLink } from 'react-router-dom'
-import { AiOutlineHome } from 'react-icons/ai'
+import { AiOutlineMail } from 'react-icons/ai'
 import './styles/filtrador.css'
 import mainLogo from '../assets/img/mainLogo.png'
 
@@ -77,9 +77,9 @@ const Filtrador = () => {
         </div>
       </div>
       <div className="volver">
-        <NavLink to='/home'>
-          <AiOutlineHome className='volverIcon' />
-          <div className="volverButton">Inicio</div>
+        <NavLink to='/contactarfreecoder'>
+            <AiOutlineMail className= 'volverIcon' />
+          <div className="volverButton">Contacto</div>
         </NavLink>
       </div>
     </div>

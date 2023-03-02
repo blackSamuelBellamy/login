@@ -1,6 +1,7 @@
 import { Container, Card } from "react-bootstrap";
 import { Table } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import Navegacion from "../components/Navegacion";
 //import { userName, date, randomName } from "../database";
 
 const temporaryData = {
@@ -32,6 +33,7 @@ function EnvioPropuesta() {
         <>
             <Container className="text-center maincontainer">
                 <div className="maincontainer">
+                    <Navegacion />
                     <h1> ¡Felicitaciones {clientName}! </h1>
                     <p>Nuestro coder {userName} te ha enviado una propuesta</p>
                 </div>

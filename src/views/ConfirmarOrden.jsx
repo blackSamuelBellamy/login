@@ -1,4 +1,5 @@
 import { Card, ListGroup, Button } from "react-bootstrap";
+import Navegacion from "../components/Navegacion";
 
 function ConfirmRequest() {
   const numeroDeSeguimiento = "123456"; // importar nombre de API o base de datos
@@ -7,6 +8,7 @@ function ConfirmRequest() {
   return (
     <>
       <div className="maincontainer">
+      <Navegacion />
         <div className="maincontainer">
           <h2>¡Felicitaciones!</h2>
           <h3>Hemos enviado tu solicitud al Freecoder</h3>

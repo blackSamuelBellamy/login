@@ -6,6 +6,7 @@ import CrearPortafolio from '../components/CrearPortafolio';
 import CrearOfertaValor from '../components/CrearOfertaValor';
 import CrearRepo from '../components/CrearRepo';
 import AddSkills from '../components/AddSkills';
+import Navegacion from '../components/Navegacion';
 
 export default function CrearPerfil() {
     const { isSaving, setIsSaving } = useContext(DataContext)
@@ -19,19 +20,30 @@ export default function CrearPerfil() {
     };
 
     return (
-        <>
-            <div className='maincontainer' >
-                <div>{<CrearDatosPerfil />}</div>
-                <div>{<AddSkills />}</div>
-                <div>{<CrearPortafolio />}</div>
-                <div>{<CrearRepo />}</div>
-                <div>{<CrearOfertaValor />}</div>
-                <div className="text-center mt-4">
-                    <Button id='button-crearperfil' className="consolas-font" onClick={handleSaveClick} disabled={isSaving}>
-                        {isSaving ? 'Saving...' : 'Guardar todos los cambios'}
-                    </Button>
-                </div>
+
+        <div className='maincontainer' >
+            <Navegacion />
+            <div>
+                <CrearDatosPerfil />
             </div>
-        </>
+            <div>
+                <AddSkills />
+            </div>
+            <div>
+                <CrearPortafolio />
+            </div>
+            <div>
+                <CrearRepo />
+            </div>
+            <div>
+                <CrearOfertaValor />
+            </div>
+            <div className="text-center mt-4">
+                <Button id='button-crearperfil' className="consolas-font" onClick={handleSaveClick} disabled={isSaving}>
+                    {isSaving ? 'Saving...' : 'Guardar todos los cambios'}
+                </Button>
+            </div>
+        </div>
+
     );
 }

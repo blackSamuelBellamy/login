@@ -8,7 +8,6 @@ function Seguimiento() {
     <>
       <TrackingRequest />
       
-      
     </>
   );
 }

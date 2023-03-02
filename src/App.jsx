@@ -12,17 +12,19 @@ import AbonarPropuesta from "./views/AbonarPropuesta"
 import ConfirmarOrden from "./views/ConfirmarOrden"
 import Seguimiento from "./views/Seguimiento"
 import EnvioPropuesta from "./views/EnvioPropuesta"
+import Navegacion from './components/Navegacion'
 
 
 const App = () => {
 
   return (
     <div className="container">
+           
       <States>
         <BrowserRouter>     
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route index element={<Home />} />
+            <Route path='/' element={<Navegacion />} />
+            <Route index element={<Navegacion />} />
             <Route path='/home' element={<Home />} />
             <Route path='/login' element={<Form />} />
             <Route path='/busqueda' element={<Busqueda />} />
@@ -36,8 +38,8 @@ const App = () => {
             <Route path="/enviopropuesta" element={<EnvioPropuesta />} />
           </Routes>
         </BrowserRouter>
-      </States>
-    </div>
+      </States> 
+      </div>
   )
 }
 
